@@ -2,11 +2,31 @@
 <html>
   <head>
     <title> Integrated Speech and Gesture Synthsis (ICMI 2021) </title>
+    <script src="video_player.js"></script>
   </head>
   <body>
     <h1> Integrated Speech and Gesture Synthsis (ICMI 2021) </h1>
-    <p> paper link: </p>
-    code: (coming soon)
-    videos:
+    paper link: (coming soon) </br>
+    code: (coming soon) </br>
+    <h3>videos:</h3>
+    <div> See paper sec.3 & sec.5 for details of each model. "ST-Tacotron2-ISG-using_mel_output" is an ablation model discussed in sec.7. </div>
+    <div id="video_div"><video id="video_element" src="Pipeline-0.mp4" width="540" height="230"> </video></div>
+    <label for="volume_controller">Volume</label>
+    <input type="range" id="volume_controller" name="audio_volume" min="0" max="0.2" step="0.002" value="0.02"></input> </br>
+    <input type="button" id="play_button" value="play"></input> </br>
+    <input type="button" id="stop_button" value="stop"></input> </br>
+
+    <script>
+        var subfolders = ["Pipeline", "ST-Tacotron2-ISG", "CT-Tacotron2-ISG", "GlowTTS-ISG", "ST-Tacotron2-ISG-using_mel_output"]
+        video_player(folder_path="videos", sub_video_folders=subfolders,
+                    video_element_id="video_element", video_div_id="video_div", volume_controller_id="volume_controller",
+                    play_button_id="play_button", stop_button_id="stop_button")
+    </script>
+
+    <b> *** </br> </b>
+      All rights reserved by authors of the paper "Integrated Speech and Gesture Synthsis"(ICMI 2021). </br>
+      All videos are created by the authors. </br>
+      These are for personal viewing and for academic research purpose only.</br>
+      Redistribution or reuse of any part of any material shown on this website or in the paper is prohibited. </br>
   </body>
 </html>
