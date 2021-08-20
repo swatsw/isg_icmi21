@@ -1,4 +1,4 @@
-# isg_icmi21
+# "Integrated Speech and Gesture Synthesis" (ICMI 2021) website
 This repo contains files that make up project website (github page built from this repo) for ICMI 2021 paper "Integrated Speech and Gesture Synthesis".
 All rights reserved by authors of the paper.
 All files are created by the authors of the paper.
